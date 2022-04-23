@@ -44,6 +44,11 @@ img {
   padding: 0 4rem;
 }
 
+.stop-scroling{
+  height: 100%;
+  overflow: hidden;
+}
+
 .grid-2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -117,6 +122,62 @@ nav .container {
 .links a.active:hover {
   color: var(--whire-two);
   background-color: #1a6412;
+}
+
+.hamburger-menu{
+  width: 2.7rem;
+  height: 3rem;
+  z-index: 100;
+  position: relative;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.hamburger-menu .bar{
+  position: relative;
+  width: 2.1rem;
+  height: 3px;
+  border-radius: 3px;
+  background-color: var(--dark-one);
+  transition: 0.5s;
+}
+
+.bar::before, .bar::after{
+  content: "";
+  position: absolute;
+  width: 2.1rem;
+  height: 3px;
+  border-radius: 3px;
+  background-color: var(--dark-one);
+  transition: 0.5s;
+}
+
+.bar::before{
+  transform: translateY(-9px);
+}
+
+.bar::after{
+  transform: translateY(9px);
+}
+
+nav.open .hamburger-menu .bar{
+  background-color: transparent;
+  transform: rotate(360deg);
+}
+
+nav.open .hamburger-menu .bar::before{
+  transform: translateY(0) rotate(45deg);
+  background-color: var(--white-color);
+}
+
+nav.open .hamburger-menu .bar::after{
+  transform: translateY(0) rotate(-45deg);
+  background-color: var(--white-color);
+}
+
+nav.open .links{
+  transform: translateX(0);
 }
 
 /*Кінець стилів шапки*/
@@ -1288,7 +1349,7 @@ header .points2 {
   }
 
   .links a {
-    color: var(--light-one);
+    color: var(--white-color);
   }
 
   .links a.active {

@@ -16,7 +16,7 @@
 </head>
 <body>
     <main>
-        <header>
+        <header id="home">
             <div class="overlay overlay-lg">
                 <img src="./img/shapes/square.png" class="shape square" alt="">
                 <img src="./img/shapes/circle.png" class="shape circle" alt="">
@@ -42,14 +42,18 @@
 
                     <div class="links">
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Portfolio</a></li>
-                            <li><a href="#">About</a></li>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#about">About</a></li>
                             <li><a href="#">Testimonials</a></li>
                             <li><a href="#">Contact</a></li>
                             <li><a class="active" href="#">Hire me</a></li>
                         </ul>
+                    </div>
+
+                    <div class="hamburger-menu">
+                        <div class="bar"></div>
                     </div>
                 </div>
             </nav>
@@ -75,7 +79,7 @@
         </header>
 
         
-        <section class="services section">
+        <section id="services" class="services section">
 
             
             <div class="container">
@@ -128,7 +132,7 @@
         </section>
         
 
-        <section class="portfolio section">
+        <section id="portfolio" class="portfolio section">
             <div class="background-bg">
                 <div class="overlay overlay-sm">
                     <img src="./img/shapes/half-circle.png" class="shape half-circle1" alt="">
@@ -272,7 +276,7 @@
             </div>
         </section>
 
-        <sectioon class="about section">
+        <sectioon id="about" class="about section">
             <div class="container">
                 <div class="section-header">
                     <h3 class="title" data-title="Who Am I">About Me</h3>
@@ -315,7 +319,7 @@
 
         <sectioon class="blog section">
             <div class="container">
-                <div class="section-header">
+                <div class="section-header header-blog">
                     <h3 class="title" data-title="Last News">My Blog</h3>
                     <p class="text">Публикую новости, которые наиболее интересны мне и могут заинтересовать вас.</p>
                 </div>
