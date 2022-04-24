@@ -74,14 +74,15 @@ header {
 
 nav {
   width: 100%;
-  position: relative;
+  position: fixed;
   z-index: 50;
+  background-color: var(--background-color);
 }
 
 nav .container {
   display: flex;
   justify-content: space-between;
-  height: 6rem;
+  height: 4rem;
   align-items: center;
 }
 
@@ -973,7 +974,7 @@ header .points2 {
   }
 
   nav .container {
-    height: 4.5rem;
+    height: 4rem;
   }
 
   .header-content .container.grid-2 {
@@ -1312,11 +1313,11 @@ header .points2 {
   }
 
   .header-content {
-    margin-top: 1rem;
+    margin-top: 7rem;
   }
 
   .header-title {
-    font-size: 2.3rem;
+    font-size: 2rem;
   }
 
   .header-content .image {
