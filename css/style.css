@@ -186,9 +186,10 @@ nav.open .links{
 /*Перша сторінка*/
 .header-content .container.grid-2 {
   grid-template-columns: 4.5fr 3.5fr;
-  min-height: calc(100vh - 6rem);
+  min-height: calc(100vh - 3rem);
   padding-bottom: 2.5rem;
   text-align: left;
+  
 }
 
 .colum-1 {
@@ -708,6 +709,9 @@ header .points2 {
 
 .about .text {
   margin-top: 1rem;
+  text-align: initial;
+  font-size: 14px;
+  text-indent: 20px;
 }
 
 .skills{
