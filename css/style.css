@@ -40,6 +40,72 @@ ul {
 img {
   width: 100%;
 }
+
+.preloader{
+  --first-color: #00FF00;
+  --second-color:#FFFF00;
+  --third-color:#0000FF;
+  --duraction:1s;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #1a6412;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+}
+
+.preloader-content{
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.preloader-first,
+.preloader-second,
+.preloader-third{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  animation: var(--duraction) linear infinite  ;
+}
+
+.preloader-first{
+  border-bottom: 3px solid var(--first-color);
+  animation-name: first;
+}
+
+
+.preloader-second{
+  border-right: 3px solid var(--second-color);
+  animation-name: second;
+}
+
+
+.preloader-third{
+  border-top: 3px solid var(--third-color);
+  animation-name: third;
+}
+
+@keyframes first{
+  0%{transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);}
+  100%{transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);}
+}
+
+@keyframes second{
+  0%{transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);}
+  100%{transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);}
+}
+
+@keyframes third{
+  0%{transform: rotateX(50deg) rotateY(55deg) rotateZ(0deg); }
+  100%{transform: rotateX(50deg) rotateY(55deg) rotateZ(360deg); }
+}
+
+
 .container {
   position: relative;
   z-index: 5;

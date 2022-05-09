@@ -30,6 +30,26 @@ for (let anchor of anchors){
 };
 
 
+//preloader
+function preloader() {
+  $(() => {
+    setInterval(() =>{
+      let p = $('.preloader');
+      p.css('opacity', 0);
+
+      setInterval(
+        () => p.remove(),
+        parseInt(p.css('--duraction')) * 1000
+      );
+
+    }, 1000);
+    
+
+  });
+};
+
+preloader();
+
 filter_btns.forEach( btn => btn.addEventListener("click", () => {
     filter_btns.forEach(button => button.classList.remove("active"));
     btn.classList.add("active");
