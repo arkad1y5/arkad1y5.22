@@ -49,7 +49,6 @@ $(".grid").isotope({
 
 window.addEventListener("scroll", () => {
   skillsEffect();
-  countUp();
 });
 
 function checkScroll(el) {
