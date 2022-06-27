@@ -111,3 +111,36 @@ $('.grid').isotope({
 })
 
 
+/*===== SCROLL REVEAL ANIMATION =====*/
+const sr = ScrollReveal({
+  origin: 'top',
+  distance: '100px',
+  duration: 2000,
+  reset: true
+});
+
+/*SCROLL HOME*/
+sr.reveal('.header-content',{}); 
+sr.reveal('.column-1',{delay: 300}); 
+sr.reveal('.btn',{delay: 400}); 
+sr.reveal('.column-2',{ interval: 400}); 
+
+/*SCROLL SERVICES*/
+sr.reveal('.services ',{}); 
+sr.reveal('.section-header',{delay: 400}); 
+sr.reveal('.cards',{delay: 400}); 
+
+/*SCROLL PORTFOLIO*/
+sr.reveal('.portfolio',{}); 
+sr.reveal('.section-body',{}); 
+
+
+/*SCROLL BLOG*/
+sr.reveal('.blog-wrapper',{interval: 200}); 
+
+/*SCROLL CONTACT*/
+sr.reveal('.grid-4-col',{interval: 200}); 
+sr.reveal('.bottom-footer',{interval: 200});
+sr.reveal('.followme-wrap',{interval: 200});
+
+
